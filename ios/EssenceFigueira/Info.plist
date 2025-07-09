@@ -47,5 +47,8 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>NSMicrophoneUsageDescription</key>
+    <string>This application uses a microphone to play and record sounds.</string>
+
 </dict>
 </plist>
