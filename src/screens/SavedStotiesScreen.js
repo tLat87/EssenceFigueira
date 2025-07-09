@@ -64,20 +64,20 @@ const SavedStoriesScreen = ({navigation}) => {
                                 {item.title}
                             </Text>
 
-                            <ImageBackground
-                                source={{uri: item.url}}
-                                resizeMode="cover"
-                                imageStyle={{borderRadius: 20}}
-                                style={{
-                                    height: 240,
-                                    marginBottom: 16,
-                                    padding: 20,
-                                }}>
+                            {/*<ImageBackground*/}
+                            {/*    source={{uri: item.url}}*/}
+                            {/*    resizeMode="cover"*/}
+                            {/*    imageStyle={{borderRadius: 20}}*/}
+                            {/*    style={{*/}
+                            {/*        height: 240,*/}
+                            {/*        marginBottom: 16,*/}
+                            {/*        padding: 20,*/}
+                            {/*    }}>*/}
                                 <TouchableOpacity
                                     onPress={() => handleRemoveFact(item.id)}
                                     style={{
                                         position: 'absolute',
-                                        bottom: -10,
+                                        bottom: -70,
                                         right: -10,
                                         padding: 20,
                                         borderRadius: 50,
@@ -86,7 +86,7 @@ const SavedStoriesScreen = ({navigation}) => {
                                     }}>
                                     <Cross />
                                 </TouchableOpacity>
-                            </ImageBackground>
+                            {/*</ImageBackground>*/}
 
                             <Text style={{color: '#fff', fontSize: 18}}>{item.full}</Text>
                         </View>
