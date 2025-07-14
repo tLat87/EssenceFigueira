@@ -62,7 +62,7 @@ const RandomFactScreen = ({navigation}) => {
     };
 
     return (
-        <View style={{backgroundColor:'#000', flex: 1, paddingTop: 80, padding: 24}}>
+        <ScrollView style={{backgroundColor:'#000',  paddingTop: 80, padding: 24}}>
             <View style={{flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 20}}>
                 <TouchableOpacity onPress={() => navigation.goBack()}>
                     <RedBack/>
@@ -104,7 +104,7 @@ const RandomFactScreen = ({navigation}) => {
             <Text style={{color:'#fff', fontSize: 18}}>
                 {item.desc}
             </Text>
-        </View>
+        </ScrollView>
     )
 }
 
